@@ -1,12 +1,12 @@
-const { Schema, model, types } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 const moment = require('moment');
 
 
-const ReactSchema = new Schema(
+const ReactionsSchema = new Schema(
     {
         reactID: {
-            type: Schema.types.objectId,
-            defult: () => new types.objectId()
+            type: Types.ObjectId,
+            defult: () => new Types.ObjectId()
 
         },
 
@@ -25,7 +25,8 @@ const ReactSchema = new Schema(
         },
 
         createAt: {
-            type: Date.now,
+            type: Date,
+            default: Date.now,
             get: (createAtValue) => moment(createAtValue).format('MMM DD, YYYY [at] hh:mm a')
         }
         },
