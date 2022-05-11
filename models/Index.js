@@ -1,5 +1,5 @@
-const Thoughts = require('./Thoughts');
-const Users = require('./Users');
+const Thoughts = require('./Thoughts-routes');
+const Users = require('./user-routes');
 
 
 module.exports = { Users, Thoughts };
