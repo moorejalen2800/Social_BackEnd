@@ -1,4 +1,4 @@
-const { User, thoughts} = require('../models');
+const { User, Thoughts} = require('../models');
 
 const thoughtsController = {
   // /api/thoughts
@@ -61,8 +61,8 @@ const thoughtsController = {
 },
 
   // update Thought by id
-  updateThought({ params, body }, res) {
-    Thought.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
+  updateThoughts({ params, body }, res) {
+    Thoughts.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
       .then(dbThoughtsData => {
         if (!dbThoughtsData) {
           res.status(404).json({ message: 'No thoughts found with that id!' });
@@ -115,7 +115,7 @@ const thoughtsController = {
 },
 
   deleteReaction({ params }, res) {
-    Thought.findOneAndUpdate(
+    Thoughts.findOneAndUpdate(
       { _id: params.thoughtsId },
       { $pull: { reactions: { reactionId: params.reactionId } } },
       { new: true }
