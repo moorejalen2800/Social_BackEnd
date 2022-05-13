@@ -11,7 +11,7 @@ app.use(routes);
 
 db.once('open', ()=> {
 
-    app.listen(PORT,()=> console.log(`Connected to local host`));
+    app.listen(PORT,()=> console.log(`Connected to localhost:${PORT}`));
 })
 
 
