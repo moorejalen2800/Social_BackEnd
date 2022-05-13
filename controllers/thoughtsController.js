@@ -4,7 +4,7 @@ const thoughtsController = {
   // /api/thoughts
 
   // get all thoughts
-  getAllThought(req, res) {
+  getAllThoughts(req, res) {
     Thoughts.find({})
       .populate({
         path: 'reactions',
@@ -20,7 +20,7 @@ const thoughtsController = {
   },
 
   // get one thoughts by id
-  getThoughtById({ params }, res) {
+  getThoughtsById({ params }, res) {
     Thoughts.findOne({ _id: params.id })
       .populate({
         path: 'reactions',
@@ -41,7 +41,7 @@ const thoughtsController = {
       });
   },
 
-  createThought({ body }, res) {
+  createThoughts({ body }, res) {
     Thoughts.create(body)
         .then(({ _id }) => {
             return User.findOneAndUpdate(
@@ -74,8 +74,8 @@ const thoughtsController = {
   },
 
   // delete thought by ID
-  deleteThought({ params }, res) {
-    Thought.findOneAndDelete({ _id: params.id })
+  deleteThoughts({ params }, res) {
+    Thoughts.findOneAndDelete({ _id: params.id })
       .then(dbThoughtsData => {
         if (!dbThoughtsData) {
           res.status(404).json({ message: 'No thoughts found with that id!' });
