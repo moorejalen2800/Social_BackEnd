@@ -1,13 +1,7 @@
 ## Social Backend
 
-
-
-# Description
-
 This is a Social Network API built using Mongoose and is ready to be hooked up to a front end
 
-
-# Table of Contents
 
 ## Table of Contents
   - [Installation](#installation)
