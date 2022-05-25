@@ -1,13 +1,11 @@
 ## Social Backend
 
-ReadMe app
-
-This is a command line based application that lets you automatically create a readme file with content after answering a few questions.
 
 
 # Description
 
-I want to generate A high quility README that explains what you app does and why you use the tech that you did
+This is a Social Network API built using Mongoose and is ready to be hooked up to a front end
+
 
 # Table of Contents
 
@@ -21,11 +19,12 @@ I want to generate A high quility README that explains what you app does and why
 
 # Installation
 
-You will need to run "npm install inquirer" for the inquirer package.
+In order to install this project you must clone this project on to your local machine.
+
 
 # Usage
 
-Clone my repository to your local machine, run "npm install inquirer" in the terminal, and then run "node index.js" to be prompted with questions that will generate your readme file.
+Clone my repository to your local machine, This project usage is for anyone that needs a back-end for their social network type site
 
 # License
 
