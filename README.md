@@ -24,3 +24,10 @@ Clone my repository to your local machine, This project usage is for anyone that
 
 Copyright  License: Unlicense
 
+# Contributing 
+
+Leif Hetland
+
+Laura Cole
+
+Michelle Jordan
