@@ -15,6 +15,10 @@ This is a Social Network API built using Mongoose and is ready to be hooked up t
 
 Npm install then node server.js.
 
+# Demo 
+
+Will add walkthru video soon 
+
 
 
 # Usage
